@@ -19,7 +19,7 @@ FROM python:3-alpine
 COPY requirements.txt requirements.txt
 RUN apk --no-cache add --virtual=.build-dep \
       build-base \
-    && apk --no-cache add bash libzmq \
+    && apk --no-cache add bash libzmq zeromq-dev \
     && pip install -r requirements.txt \
     && apk del .build-dep
 
