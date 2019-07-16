@@ -1,3 +1,4 @@
 locustio==0.8.1
 pyzmq==16.0.2
 faker-schema==0.1.4
+pymongo==3.8.0
