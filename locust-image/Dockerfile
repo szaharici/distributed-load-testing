@@ -14,7 +14,7 @@
 
 
 # Start with a base Python 2.7 alpine image
-FROM python:2.7-alpine
+FROM python:3-alpine
 
 COPY requirements.txt requirements.txt
 RUN apk --no-cache add --virtual=.build-dep \
